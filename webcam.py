@@ -1,3 +1,5 @@
+#!/usr/bin/python3
+
 import json
 import pygame.camera, pygame.image
 from mastodon import Mastodon
