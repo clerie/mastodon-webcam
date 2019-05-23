@@ -17,8 +17,8 @@ cam = pygame.camera.Camera(pygame.camera.list_cameras()[0], (1280, 720))
 cam.start()
 img = cam.get_image()
 
-pygame.image.save(img, "tmp/shot.jpg")
+pygame.image.save(img, "shot.jpg")
 
 pygame.camera.quit()
 
-print(mastodon.status_post("#IlmenauHimmelGrau", media_ids=[mastodon.media_post("tmp/shot.jpg")]))
+print(mastodon.status_post("#IlmenauHimmelGrau", media_ids=[mastodon.media_post("shot.jpg")]))
